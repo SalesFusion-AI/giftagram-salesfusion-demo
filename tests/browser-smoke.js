@@ -7,7 +7,8 @@ const assert = require('node:assert/strict');
   const errors=[];
   page.on('console',m=>{ if(m.type()==='error') errors.push(`console: ${m.text()}`); });
   page.on('pageerror',e=>errors.push(`pageerror: ${e.message}`));
-  await page.goto('http://127.0.0.1:4173/',{waitUntil:'networkidle'});
+  const baseUrl = process.env.BASE_URL || 'http://127.0.0.1:4173/';
+  await page.goto(baseUrl,{waitUntil:'networkidle'});
 
   assert.equal(await page.locator('#modelKpis .kpi').count(),5);
   const before=await page.locator('#modelKpis .kpi').nth(4).textContent();
