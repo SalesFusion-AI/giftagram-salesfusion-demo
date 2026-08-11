@@ -1,167 +1,52 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<meta name="robots" content="noindex,nofollow,noarchive" />
-<title>Giftagram × SalesFusion — Enterprise Pipeline System</title>
-<style>
-:root{--ink:#14231f;--muted:#65736e;--green:#0b5b4f;--mint:#dff2eb;--cream:#f7f5ef;--gold:#d9a441;--line:#d8e1dd;--white:#fff;--red:#b8463f;--shadow:0 18px 48px rgba(18,44,36,.1)}
-*{box-sizing:border-box}body{margin:0;background:linear-gradient(150deg,#f7f5ef 0%,#edf5f1 55%,#f8faf9 100%);color:var(--ink);font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.45}.shell{max-width:1180px;margin:0 auto;padding:28px}.top{display:flex;justify-content:space-between;align-items:center;margin-bottom:22px}.brand{font-weight:800;letter-spacing:-.02em}.brand span{color:var(--green)}.tag{font-size:12px;font-weight:700;color:var(--green);background:var(--mint);padding:7px 11px;border-radius:999px}.hero{background:var(--ink);color:white;border-radius:26px;padding:36px 38px;box-shadow:var(--shadow);position:relative;overflow:hidden}.hero:after{content:"";position:absolute;width:320px;height:320px;border-radius:50%;right:-90px;top:-120px;background:radial-gradient(circle,#4bb795 0%,rgba(75,183,149,.05) 65%)}.eyebrow{text-transform:uppercase;letter-spacing:.16em;font-size:11px;font-weight:800;color:#87d6be}.hero h1{font-size:43px;line-height:1.06;margin:10px 0 12px;max-width:780px;letter-spacing:-.045em}.hero p{font-size:17px;color:#cbd8d3;max-width:790px;margin:0}.nav{display:flex;gap:8px;margin:20px 0;overflow:auto;padding-bottom:2px}.nav button{border:1px solid var(--line);background:rgba(255,255,255,.7);color:var(--ink);padding:10px 15px;border-radius:12px;font-weight:700;cursor:pointer;white-space:nowrap}.nav button.active,.nav button:hover{background:var(--green);color:white;border-color:var(--green)}.panel{display:none}.panel.active{display:block}.grid{display:grid;grid-template-columns:repeat(12,1fr);gap:16px}.card{background:rgba(255,255,255,.92);border:1px solid var(--line);border-radius:20px;padding:22px;box-shadow:0 8px 24px rgba(18,44,36,.05)}.span12{grid-column:span 12}.span8{grid-column:span 8}.span7{grid-column:span 7}.span6{grid-column:span 6}.span5{grid-column:span 5}.span4{grid-column:span 4}.span3{grid-column:span 3}.card h2{font-size:25px;letter-spacing:-.035em;margin:0 0 8px}.card h3{font-size:17px;margin:0 0 7px}.card p{color:var(--muted);margin:0}.metric{font-size:34px;font-weight:850;letter-spacing:-.04em;color:var(--green)}.metric-label{font-size:13px;color:var(--muted);font-weight:650}.flow{counter-reset:step}.step{display:flex;gap:13px;align-items:flex-start;padding:14px 0;border-bottom:1px solid var(--line)}.step:last-child{border-bottom:0}.num{flex:0 0 31px;height:31px;border-radius:10px;background:var(--mint);color:var(--green);display:grid;place-items:center;font-weight:850}.step strong{display:block}.step small{color:var(--muted)}.signal{border-left:5px solid var(--gold)}.source{display:inline-flex;gap:6px;align-items:center;color:var(--green);font-weight:750;text-decoration:none;font-size:13px}.pill{display:inline-block;padding:6px 9px;border-radius:999px;background:var(--cream);font-size:12px;font-weight:750;margin:4px 4px 0 0}.route{display:grid;grid-template-columns:48px 1fr;gap:11px;padding:13px 0;border-bottom:1px solid var(--line)}.route:last-child{border-bottom:0}.avatar{width:42px;height:42px;border-radius:12px;background:var(--green);color:white;display:grid;place-items:center;font-weight:850}.status{display:flex;justify-content:space-between;align-items:center;padding:11px 0;border-bottom:1px solid var(--line);gap:12px}.status:last-child{border-bottom:0}.ok,.gate,.hold{font-size:11px;font-weight:850;border-radius:999px;padding:5px 8px}.ok{background:#dff2eb;color:#0b5b4f}.gate{background:#fff0d1;color:#795100}.hold{background:#f6ddda;color:#8e302b}.quote{font-size:20px;font-weight:760;letter-spacing:-.025em;border-left:4px solid var(--green);padding-left:16px}.proof strong{font-size:23px;color:var(--green);display:block}.proof small{color:var(--muted)}.timeline{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.phase{padding:15px;border-radius:15px;background:var(--cream);border:1px solid #ebe6d9}.phase b{display:block;color:var(--green);margin-bottom:5px}.callout{background:linear-gradient(135deg,#0b5b4f,#123f37);color:white}.callout p{color:#d9ebe5}.callout h2{color:white}.foot{margin:18px 2px;color:var(--muted);font-size:11px}.hidden-note{margin-top:10px;padding:10px 12px;border-radius:10px;background:#fff6df;color:#6b5418;font-size:12px}.demo-btn{border:0;background:var(--green);color:white;font-weight:800;padding:11px 16px;border-radius:12px;cursor:pointer;margin-top:13px}.demo-btn:hover{filter:brightness(1.06)}
-@media(max-width:800px){.shell{padding:14px}.hero{padding:26px 23px}.hero h1{font-size:34px}.span8,.span7,.span6,.span5,.span4,.span3{grid-column:span 12}.timeline{grid-template-columns:1fr}.grid{gap:12px}}
-@media print{body{background:white}.shell{max-width:none;padding:0}.nav{display:none}.panel{display:block!important;page-break-after:always}.hero{box-shadow:none;border-radius:0}.card{box-shadow:none}.foot{display:none}}
-</style>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>Giftagram Revenue Workbench</title>
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
+<header class="appbar">
+  <div class="brand"><div class="mark">G</div><div><strong>Giftagram Revenue Workbench</strong><span>Operated with SalesFusion</span></div></div>
+  <div class="topmeta"><span class="badge">Local calculations · no data uploaded</span><button class="reset" id="resetBtn">Reset assumptions</button></div>
+</header>
 <div class="shell">
-  <div class="top"><div class="brand">Giftagram <span>× SalesFusion</span></div><div class="tag">Client preview · August 2026</div></div>
-  <section class="hero">
-    <div class="eyebrow">Enterprise pipeline operating system</div>
-    <h1>Turn Giftagram’s market proof and 14,000 contacts into a system that finds, prioritizes and advances the right opportunities.</h1>
-    <p>Six connected workflows. Human-approved execution. One weekly learning loop.</p>
-  </section>
-  <div class="nav">
-    <button class="active" data-tab="opportunity">1. Opportunity</button>
-    <button data-tab="system">2. Six workflows</button>
-    <button data-tab="signal">3. Signal demo</button>
-    <button data-tab="governance">4. Control</button>
-    <button data-tab="launch">5. First 30 days</button>
+<aside>
+  <div class="navlabel">Operate</div>
+  <button class="navbtn active" data-view="model">Model<small>TOF → MOF → BOF</small></button>
+  <button class="navbtn" data-view="goal">Goal seek<small>Reverse the target</small></button>
+  <button class="navbtn" data-view="segment">HubSpot<small>Segment a CSV</small></button>
+  <button class="navbtn" data-view="signal">Signals<small>Score a trigger</small></button>
+  <button class="navbtn" data-view="campaign">Campaign cell<small>Build one test</small></button>
+  <div class="sidefoot">Directional planning model.<br>Outputs are not forecasts or guarantees.</div>
+</aside>
+<main>
+<section class="view active" id="view-model">
+  <div class="viewhead"><div><h1>Pipeline model</h1><p>Change any operating assumption. The funnel, pipeline and revenue outputs recalculate immediately across reactivation and signal-led net-new lanes.</p></div><div class="controls"><div class="segcontrol" id="periodControl"><button data-period="1">Monthly</button><button data-period="3" class="active">90 days</button><button data-period="12">Annual</button></div><select id="scenarioSelect"><option value="0.8">Conservative</option><option value="1" selected>Expected</option><option value="1.2">Upside</option></select></div></div>
+  <div class="workspace">
+    <div class="panel"><div class="panelhead"><h2>Operating assumptions</h2><span class="micro">Edit every field</span></div><div class="panelbody"><div id="laneInputs"></div><div class="lane"><details open><summary>Economics <small>cost & margin</small></summary><div class="lanegrid" id="economicInputs"></div></details></div><div class="assumption">Conversion rates are stage-to-stage assumptions. The scenario selector applies a relative haircut or lift to response through close—not to list size, eligibility or reachability.</div></div></div>
+    <div class="panel"><div class="kpis" id="modelKpis"></div><div class="section"><div class="sectiontitle"><h3>Combined funnel</h3><span id="periodLabel"></span></div><div class="funnel" id="funnel"></div></div><div class="section"><div class="sectiontitle"><h3>Scenario range</h3><span>same volume · relative conversion sensitivity</span></div><div class="tablewrap"><table><thead><tr><th>Scenario</th><th>Responses</th><th>Meetings</th><th>Qualified</th><th>Proposals</th><th>Wins</th><th>Revenue</th></tr></thead><tbody id="scenarioRows"></tbody></table></div></div><div class="section"><div class="sectiontitle"><h3>Economics</h3><span>directional contribution view</span></div><div class="econ" id="economics"></div></div></div>
   </div>
-
-  <section id="opportunity" class="panel active">
-    <div class="grid">
-      <div class="card span4"><div class="metric">≈14,000</div><div class="metric-label">HubSpot contacts across mixed stages of awareness</div></div>
-      <div class="card span4"><div class="metric">6</div><div class="metric-label">Connected workflows in one operating system</div></div>
-      <div class="card span4"><div class="metric">1</div><div class="metric-label">Weekly view of what to scale, revise or stop</div></div>
-      <div class="card span7">
-        <h2>Giftagram already has the hard pieces</h2>
-        <p>A proven enterprise offer, multiple commercial use cases, a meaningful installed database and public evidence that thoughtful gifting can save time, improve engagement and integrate into existing workflows.</p>
-        <div style="margin-top:16px">
-          <span class="pill">Employee onboarding</span><span class="pill">Recognition</span><span class="pill">Client experience</span><span class="pill">Reviews & surveys</span><span class="pill">Strategic accounts</span><span class="pill">Events & milestones</span>
-        </div>
-      </div>
-      <div class="card span5 callout">
-        <h2>The operating gap</h2>
-        <p>Pipeline still depends on people remembering who matters, rebuilding account context, writing outreach, chasing follow-up and keeping HubSpot current.</p>
-      </div>
-      <div class="card span3 proof"><strong>200+ hours</strong><small>saved by JLL across a 525-gift program</small></div>
-      <div class="card span3 proof"><strong>117 hours</strong><small>saved by Mistplay across 300+ onboarding gifts</small></div>
-      <div class="card span3 proof"><strong>33%</strong><small>of Snap gift recipients sent a thank-you message</small></div>
-      <div class="card span3 proof"><strong>+50%</strong><small>survey completions reported by Owl Labs</small></div>
-    </div>
-  </section>
-
-  <section id="system" class="panel">
-    <div class="grid">
-      <div class="card span6">
-        <h2>The six-workflow system</h2>
-        <div class="step"><div class="num">1</div><div><strong>HubSpot segmentation and reactivation</strong><small>Dormant opportunities, engaged accounts, warm contacts, expansion, nurture and net-new lanes.</small></div></div>
-        <div class="step"><div class="num">2</div><div><strong>Signal-driven account sourcing</strong><small>Hiring, acquisitions, leadership changes, events, milestones, expansion and CRM activity.</small></div></div>
-        <div class="step"><div class="num">3</div><div><strong>Enterprise buyer prioritization</strong><small>Map the economic, operational, technical and procurement routes for each account.</small></div></div>
-        <div class="step"><div class="num">4</div><div><strong>Controlled outbound campaigns</strong><small>One segment × one signal × one use case × one buyer route × one message × one CTA.</small></div></div>
-        <div class="step"><div class="num">5</div><div><strong>Agent-assisted research and follow-up</strong><small>Research, scoring, drafting, reply classification, reminders and next-action recommendations.</small></div></div>
-        <div class="step"><div class="num">6</div><div><strong>HubSpot coordination and weekly learning</strong><small>Evidence, stage movement, objections, stalls and the next scale/revise/stop decision.</small></div></div>
-      </div>
-      <div class="card span6 callout">
-        <h2>What the system changes</h2>
-        <div class="quote">“Who should we pursue, why now, through which use case, with which buyer—and what happened next?”</div>
-        <p style="margin-top:18px">SalesFusion turns that from an ad hoc founder decision into a repeatable, reviewable operating process.</p>
-        <div style="margin-top:22px">
-          <span class="pill" style="background:#1c6d5f;color:white">Agents do the repeatable work</span>
-          <span class="pill" style="background:#1c6d5f;color:white">Humans own judgment</span>
-          <span class="pill" style="background:#1c6d5f;color:white">Nothing launches invisibly</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="signal" class="panel">
-    <div class="grid">
-      <div class="card span7 signal">
-        <div class="eyebrow" style="color:#8f6513">Sourced account signal · demo candidate</div>
-        <h2>AZZ acquires Seattle Galvanizing</h2>
-        <p>AZZ announced a July 30 acquisition that adds two Seattle-area locations and expands its North American network to 43 sites. Its release explicitly welcomes the acquired company’s employees and customers.</p>
-        <a class="source" target="_blank" href="https://investor.azz.com/2026-07-30-AZZ-Inc-Announces-Acquisition-of-Seattle-Galvanizing-Company,-Inc">View primary source ↗</a>
-        <div style="margin-top:14px"><span class="pill">Acquisition</span><span class="pill">Employee transition</span><span class="pill">Customer continuity</span><span class="pill">New geography</span></div>
-      </div>
-      <div class="card span5">
-        <h2>Why Giftagram now</h2>
-        <p>An acquisition creates immediate moments for employee welcome, leadership alignment, customer appreciation and integration milestones—without claiming that AZZ has expressed buying intent.</p>
-        <div class="hidden-note"><b>Interpretation:</b> strong timing hypothesis; outreach remains blocked until contact verification, suppression and Giftagram approval.</div>
-      </div>
-      <div class="card span6">
-        <h2>Buyer route</h2>
-        <div class="route"><div class="avatar">RD</div><div><b>Rhonda Davenport</b><br><small>Chief Human Resources Officer · employee transition and recognition route</small></div></div>
-        <div class="route"><div class="avatar">DN</div><div><b>David Nark</b><br><small>Chief Marketing, Communications & Investor Relations Officer · brand and customer communication route</small></div></div>
-        <div class="route"><div class="avatar">TB</div><div><b>Todd Bella</b><br><small>President, Metal Coatings · operating sponsor for the acquired business</small></div></div>
-        <a class="source" target="_blank" href="https://investor.azz.com/executive-officers">Executive-role source ↗</a>
-      </div>
-      <div class="card span6">
-        <h2>Recommended first conversation</h2>
-        <p><b>Use case:</b> a coordinated, branded gifting program for acquired employees, key customers or integration milestones.</p>
-        <p style="margin-top:12px"><b>Message hypothesis:</b> Giftagram can help AZZ recognize the people and relationships behind the transition without creating a logistics burden for the integration team.</p>
-        <p style="margin-top:12px"><b>Relevant Giftagram proof:</b> JLL’s 525-recipient program, Mistplay’s automated onboarding and Compass’s integrated gifting workflow.</p>
-        <button class="demo-btn" onclick="document.getElementById('gate-note').style.display='block'">Prepare for approval</button>
-        <div id="gate-note" class="hidden-note" style="display:none"><b>Prepared, not sent.</b> Next gates: verify contact route → check HubSpot/prior contact → confirm suppression → approve copy → approve launch.</div>
-      </div>
-    </div>
-  </section>
-
-  <section id="governance" class="panel">
-    <div class="grid">
-      <div class="card span6">
-        <h2>Approval state for the demo account</h2>
-        <div class="status"><span>Primary acquisition source</span><span class="ok">VERIFIED</span></div>
-        <div class="status"><span>Named executive roles</span><span class="ok">VERIFIED</span></div>
-        <div class="status"><span>Giftagram use-case hypothesis</span><span class="gate">REVIEW</span></div>
-        <div class="status"><span>Contact route and email</span><span class="hold">NOT VERIFIED</span></div>
-        <div class="status"><span>HubSpot/prior-contact check</span><span class="hold">BLOCKED</span></div>
-        <div class="status"><span>Suppression and copy approval</span><span class="hold">BLOCKED</span></div>
-        <div class="status"><span>External send</span><span class="hold">NO ACTION</span></div>
-      </div>
-      <div class="card span6 callout">
-        <h2>Human and agent division of labor</h2>
-        <div class="step"><div class="num">A</div><div><strong>Agents</strong><small>Monitor, research, score, draft, classify, reconcile and report.</small></div></div>
-        <div class="step"><div class="num">H</div><div><strong>Giftagram</strong><small>Own positioning, approval, important conversations, qualification and commercial judgment.</small></div></div>
-        <div class="step"><div class="num">S</div><div><strong>SalesFusion</strong><small>Operate the workflow, enforce gates, maintain quality and improve the system weekly.</small></div></div>
-      </div>
-      <div class="card span12">
-        <h2>The weekly operating view</h2>
-        <div class="grid" style="margin-top:12px">
-          <div class="span3"><b>Signals</b><p>Which events are producing relevant accounts?</p></div>
-          <div class="span3"><b>Buyer response</b><p>Which roles and use cases are engaging?</p></div>
-          <div class="span3"><b>Pipeline movement</b><p>What revived, advanced, stalled or needs founder attention?</p></div>
-          <div class="span3"><b>Decision</b><p>What should scale, revise or stop next week?</p></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="launch" class="panel">
-    <div class="grid">
-      <div class="card span12">
-        <h2>First 30 days</h2>
-        <div class="timeline">
-          <div class="phase"><b>Days 1–5</b><span>Access, baseline, exclusions, ICP/use-case decisions and HubSpot field audit.</span></div>
-          <div class="phase"><b>Days 6–10</b><span>Segment the database, surface reactivation opportunities and define initial signals.</span></div>
-          <div class="phase"><b>Days 11–20</b><span>Build buyer routes and manually validate the first campaign cells and follow-up logic.</span></div>
-          <div class="phase"><b>Days 21–30</b><span>Run approved workflows, reconcile HubSpot evidence and establish the weekly learning loop.</span></div>
-        </div>
-      </div>
-      <div class="card span7 callout">
-        <h2>All six workflows are included</h2>
-        <p>They activate in a sensible sequence so Giftagram gets near-term reactivation value while the signal, buyer, outbound, agent and reporting layers come online around it.</p>
-      </div>
-      <div class="card span5">
-        <h2>What we need to begin</h2>
-        <p>One decision owner, HubSpot access or an approved export, exclusions/no-touch rules, current opportunity definitions, approved use cases and timely review of the first outputs.</p>
-      </div>
-    </div>
-  </section>
-  <div class="foot">Prepared by SalesFusion for Giftagram. Public Giftagram proof is sourced from Giftagram’s published customer stories. The AZZ example is a sourced demonstration candidate, not a claim of buying intent.</div>
-</div>
-<script>
-const buttons=[...document.querySelectorAll('.nav button')], panels=[...document.querySelectorAll('.panel')];
-buttons.forEach(b=>b.addEventListener('click',()=>{buttons.forEach(x=>x.classList.remove('active'));panels.forEach(x=>x.classList.remove('active'));b.classList.add('active');document.getElementById(b.dataset.tab).classList.add('active');window.scrollTo({top:0,behavior:'smooth'})}));
-</script>
+</section>
+<section class="view" id="view-goal">
+  <div class="viewhead"><div><h1>Goal seeker</h1><p>Start from a commercial outcome and reverse the current conversion assumptions into the monthly top-of-funnel volume required.</p></div></div>
+  <div class="two"><div class="panel"><div class="panelhead"><h2>Target</h2></div><div class="panelbody"><div class="field"><label>Revenue target for selected period</label><input type="number" id="goalRevenue" value="250000" min="0" step="10000"></div><div style="height:12px"></div><div class="field"><label>Volume lane to scale</label><select id="goalLane"><option value="netNew">Signal-led target accounts</option><option value="reactivation">HubSpot reactivation records</option></select></div><div class="goalresult" id="goalResults"></div></div></div><div class="panel"><div class="panelhead"><h2>How the target resolves</h2></div><div class="panelbody"><div class="formula" id="goalFormula"></div><div class="assumption" style="margin-top:12px">Goal seeking holds your conversion rates and average deal value constant. It changes only monthly TOF volume. Use it to test feasibility—not to present a guaranteed forecast.</div></div></div></div>
+</section>
+<section class="view" id="view-segment">
+  <div class="viewhead"><div><h1>HubSpot CSV segmenter</h1><p>Drop in an export, map five fields and classify every row into an operating lane. Processing happens entirely in this browser.</p></div><div class="privacy">No upload · no server · refresh clears the file</div></div>
+  <div class="panel"><div class="panelbody"><div class="dropzone" id="dropzone"><strong>Drop a HubSpot CSV here</strong><p class="micro">or choose a file. A synthetic sample is available for the demo.</p><button class="btn" id="chooseCsv">Choose CSV</button> <button class="btn secondary" id="sampleCsv">Load synthetic sample</button><input type="file" id="csvFile" accept=".csv,text/csv"></div><div id="segmentWorkspace" class="hidden"><div class="mapping" id="mapping"></div><div class="counts" id="segmentCounts"></div><div class="controls" style="justify-content:space-between;margin-bottom:10px"><span class="micro" id="rowSummary"></span><button class="btn secondary" id="downloadSegmented">Download annotated CSV</button></div><div class="tablewrap"><table><thead id="previewHead"></thead><tbody id="previewBody"></tbody></table></div></div></div></div>
+</section>
+<section class="view" id="view-signal">
+  <div class="viewhead"><div><h1>Signal workbench</h1><p>Turn a real trigger into a scored research object, buyer route and approval brief. A signal is a reason to investigate—not proof of buying intent.</p></div><button class="btn secondary" id="loadAzz">Load sourced AZZ example</button></div>
+  <div class="two"><div class="panel"><div class="panelhead"><h2>Signal input</h2></div><div class="panelbody"><div class="signalform"><div class="field"><label>Account</label><input id="sigAccount" placeholder="Company name"></div><div class="field"><label>Signal type</label><select id="sigType"><option value="acquisition">Acquisition</option><option value="hiring">Hiring</option><option value="leadership">Leadership change</option><option value="new_office">New office</option><option value="event">Event</option><option value="customer_program">Customer program</option><option value="crm_engagement">CRM engagement</option><option value="other">Other</option></select></div><div class="field"><label>Signal date</label><input type="date" id="sigDate"></div><div class="field"><label>Region</label><select id="sigRegion"><option value="north_america">North America</option><option value="giftagram_supported">Supported / verify</option><option value="other">Other / unknown</option></select></div><div class="field"><label>Giftagram fit (1–5)</label><input type="number" min="1" max="5" value="4" id="sigFit"></div><div class="field"><label>Relationship</label><select id="sigRelationship"><option value="net_new">Net new</option><option value="known_account">Known account</option><option value="engaged">Previously engaged</option><option value="existing_opportunity">Existing opportunity</option></select></div><div class="field wide"><label>Source URL</label><input type="url" id="sigSource" placeholder="https://..."></div><div class="field wide"><label>What happened?</label><textarea id="sigDescription" rows="4" placeholder="Concise, source-backed description"></textarea></div></div></div></div><div class="panel signalout"><div class="panelhead"><h2>Research object</h2><span id="sigPriority" class="priority">HOLD</span></div><div class="panelbody"><div class="scoreline"><div class="score" id="scoreDial" style="--score:0%"><b id="sigScore">0</b></div><div><strong id="sigHeadline">Add a signal to score it</strong><div class="micro" id="sigRationale"></div></div></div><div class="two" style="margin-top:16px"><div><h3 style="font-size:12px">Buyer routes</h3><ul class="list" id="sigBuyers"></ul></div><div><h3 style="font-size:12px">Use-case hypotheses</h3><ul class="list" id="sigUseCases"></ul></div></div><div class="brief" id="sigBrief">Approval brief will appear here.</div></div></div></div>
+</section>
+<section class="view" id="view-campaign">
+  <div class="viewhead"><div><h1>Campaign-cell builder</h1><p>Define one controlled experiment: one segment, one trigger, one use case, one buyer and one CTA. No batch launch until the cell passes approval.</p></div></div>
+  <div class="two"><div class="panel"><div class="panelhead"><h2>Cell definition</h2></div><div class="panelbody"><div class="campaignform"><div class="field"><label>Segment</label><input id="cellSegment" value="Dormant enterprise opportunities"></div><div class="field"><label>Signal</label><input id="cellSignal" value="Acquisition or employee transition"></div><div class="field"><label>Use case</label><input id="cellUseCase" value="Employee onboarding and integration"></div><div class="field"><label>Buyer</label><input id="cellBuyer" value="Chief People Officer / HR leader"></div><div class="field wide"><label>Proof</label><input id="cellProof" value="Mistplay: 300+ onboarding gifts and 117 hours saved"></div><div class="field wide"><label>CTA</label><input id="cellCta" value="Worth a 15-minute look at the program design?"></div></div></div></div><div class="panel"><div class="panelhead"><h2>Approval object</h2><button class="btn secondary" id="copyCell">Copy brief</button></div><div class="panelbody"><div class="cellcard"><div class="celltop"><b>Controlled campaign cell</b><span id="cellId"></span></div><div class="cellbody" id="cellOutput"></div></div><div class="notice" style="margin-top:12px">Blocked until: contacts verified · CRM history checked · suppression applied · copy approved · owner assigned.</div></div></div></div>
+</section>
+</main></div>
+<div class="toast" id="toast">Copied</div>
+<script src="model.js"></script><script src="app.js"></script>
 </body></html>
